@@ -9,15 +9,34 @@ grey - #95a5a6;
 red - #ee5253 */
 
 body {
-  background-image: url(../assets/burger-friends.jpg);
+  background-image: url('./assets/burger-friends.jpg');
+  background-size: cover;
   font-family: 'Roboto', sans-serif;
+  padding: 0%;
+  margin: 0%;
 }
 section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* height: 200vh; */
+}
+
+.flex-item {
+  background-color: rgba(225, 225, 225, .9);
+  /* margin: 30px; */
+  padding: 10%;
+  align-items: center;
+  text-align: left;
+  /* flex: 0; */
 }
 
 .dish-button {
   background-color: teal - #0fb9b1;
   color: black;
+}
+
+.superscript {
+  color: red;
 }
