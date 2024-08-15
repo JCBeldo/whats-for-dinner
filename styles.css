@@ -25,15 +25,19 @@ section {
 
 .flex-item {
   background-color: rgba(225, 225, 225, .9);
-  /* margin: 30px; */
-  padding: 10%;
+  margin: 30px;
+  padding: 5%;
   align-items: center;
   text-align: left;
   /* flex: 0; */
 }
 
 .dish-button {
-  background-color: teal - #0fb9b1;
+  background-color:#0fb9b1;
+  /* padding: 10px; */
+  /* margin: 10px; */
+  border-color: grey;
+  border-radius: 20px;
   color: black;
 }
 
