@@ -43,6 +43,7 @@ dishButton.addEventListener('click', function(event) {
 sideDish.addEventListener('click', handleRadioClick);
 mainDish.addEventListener('click', handleRadioClick);
 dessertDish.addEventListener('click', handleRadioClick);
+entireDish.addEventListener('click', handleRadioClick);
 
 function handleRadioClick(event) {
   selectedRadio = event.target.value;
@@ -53,13 +54,16 @@ function showDish(event) {
   event.preventDefault();
 
   if (selectedRadio === sideDish.id) {
-  dishDisplay.innerHTML = `<p>You should make:</p>` + `<h1>${randomSide}</h1>`
+  dishDisplay.innerHTML = `<i><p>You should make:</p></i>` + `<h1>${randomSide}</h1>`
   }
   else if(selectedRadio === mainDish.id) {
-  dishDisplay.innerHTML = `<p>You should make:</p>` + `<h1>${randomMain}</h1>`
+  dishDisplay.innerHTML = `<i><p>You should make:</p></i>` + `<h1>${randomMain}</h1>`
   }
   else if(selectedRadio === dessertDish.id) {
-  dishDisplay.innerHTML = `<p>You should make:</p>` + `<h1>${randomDessert}</h1>`
+  dishDisplay.innerHTML = `<i><p>You should make:</p></i>` + `<h1>${randomDessert}</h1>`
+  }
+  else if(selectedRadio === entireDish.id) {
+  dishDisplay.innerHTML = `<center><i><p>You should make:</p></i></center>` + `<center><h1>${randomMain} with a side of <br> ${randomSide} and ${randomDessert}<br> for dessert!</h1></center>`
   }
   else 
   dishDisplay.innerHTML = "<h2>Select a dish</h2>";
