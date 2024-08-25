@@ -25,7 +25,7 @@ section {
 
 .flex-item {
   background-color: rgba(225, 225, 225, .9);
-  margin: 30px;
+  margin: 30px; 
   padding: 5%;
   align-items: center;
   text-align: left;
